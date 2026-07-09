@@ -48,7 +48,7 @@ console.log("📁 Copy static files");
 await $`bun build/build-client.ts`;
 fs.cpSync("public/", `${DIST_STATICS}/`, {
   recursive: true,
-  filter: (src) => !src.endsWith(".ts"),
+  filter: (src) => !src.endsWith(".ts") && !src.endsWith(".jpg"),
 });
 console.log("✅ Complete: Copy static files");
 

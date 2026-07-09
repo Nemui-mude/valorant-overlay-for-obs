@@ -1,0 +1,25 @@
+# dependencies (bun install)
+node_modules
+
+# output
+dist
+release
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# Finder (MacOS) folder config
+.DS_Store
+
+# auto generated
+src/locales/index.ts
+
+public/bg.jpg
+config.json

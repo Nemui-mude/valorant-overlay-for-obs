@@ -1,0 +1,25 @@
+{
+  "name": "valorant-overlay_revamp",
+  "version": "1.0.0",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun run build/build.ts",
+    "dev": "concurrently -k \"bun run dev:i18n\" \"bun run dev:client\" \"bun run dev:server\"",
+    "dev:client": "bun run build/build-client.ts --watch",
+    "dev:server": "DEV_MODE=true bun run --hot src/index.ts",
+    "dev:i18n": "bun run build/build-i18n.ts --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^10.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "hono": "^4.12.27"
+  }
+}

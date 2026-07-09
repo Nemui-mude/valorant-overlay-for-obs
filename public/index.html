@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/main.js" defer></script>
+    <title>VALORANT Overlay</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="error_block">
+        <div class="error_icon">⚠</div>
+        <div class="error_text"></div>
+      </div>
+      <div id="agent_block">
+        <div class="agent_info"></div>
+      </div>
+      <div id="rank_block">
+        <img
+          id="rankImage"
+          alt=""
+          src="https://media.valorant-api.com/competitivetiers/564d8e28-c226-3180-6285-e48a390db8b1/0/smallicon.png"
+        />
+        <div class="rank_info_wrapper">
+          <div class="rank_info">
+            <span id="rank"></span>
+            <span id="rr"></span>
+          </div>
+          <span class="win_lose_title" data-i18n="match.recentTitle"></span>
+          <div class="win_lose_info">
+            <span id="win"></span>
+            <span id="lose"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

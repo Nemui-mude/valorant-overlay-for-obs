@@ -9,8 +9,6 @@
 }
 
 :root {
-  --red: #ff4654;
-  --border: #333;
   --text-color: aliceblue;
   --bg-url: url("../bg.jpg");
   --bg-filter: 0.5;

@@ -2,6 +2,8 @@
 
 This is a customizable VALORANT overlay for OBS.
 
+![preview](https://i.imgur.com/o92JUaB.png)
+
 ## Features
 
 - Customizable UI
